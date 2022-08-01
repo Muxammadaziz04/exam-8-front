@@ -18,7 +18,7 @@ const Navbar = () => {
                     <input type="text" className={style.navbar__input} />
                 </label>
                 <Link to={'/about'}><p className={style.navbar__link}>Biz xaqimizda</p></Link>
-                <p className={style.navbar__link}>Savol va javoblar</p>
+                <Link to={'/admin'}><p className={style.navbar__link}>Admin</p></Link>
                 <Link to={'/post'} className={style.navbar__button}>
                     <img src={plusIcon} alt="icon" />
                     <span>E’lon berish</span>
