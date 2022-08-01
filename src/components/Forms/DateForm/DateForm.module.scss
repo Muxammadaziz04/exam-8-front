@@ -1,0 +1,49 @@
+.form{
+    width: 100%;
+    padding: 40px 35px 25px 35px;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    border-radius: 2px;
+    margin-bottom: 50px;
+
+    &__title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+
+    &__subTitle{
+        font-size: 12px;
+        line-height: 14px;
+        color: #333333;
+        margin-bottom: 10px;
+    }
+
+    &__dates{
+        display: flex;
+        width: 100%;
+        margin-bottom: 30px;
+        &>input:first-child{
+            max-width: 171px;
+            margin-right: 40px;
+        }
+        &>input:nth-child(2){
+            max-width: 140px;
+        }
+    }
+
+    &__inputs{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        & > div{
+            width: 48%;
+            margin-bottom: 30px;
+        }
+    }
+
+    &__radio{
+        display: flex;
+    }
+}

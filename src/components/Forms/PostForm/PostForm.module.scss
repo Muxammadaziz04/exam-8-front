@@ -1,0 +1,91 @@
+.form{
+    width: 100%;
+    border: 1px solid rgba(51, 51, 51, 0.1);
+    border-radius: 2px;
+    padding: 40px;
+
+    &__title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        margin-bottom: 18px;
+    }
+
+    &__input{
+        background: inherit;
+        font-family: 'Bebas Neue';
+        border: none;
+        outline: none;
+        font-size: 32px;
+        line-height: 42px;
+        color: #333333;
+        margin-bottom: 86px;
+
+        &::placeholder{
+            color: rgba(51, 51, 51, 0.1);
+        }
+    }
+
+    &__subTitle{
+        font-size: 12px;
+        line-height: 14px;
+        color: #333333;
+        margin-bottom: 10px;
+    }
+
+    & > input{
+        margin-bottom: 40px;
+    }
+
+    & > span{
+        display: flex;
+        margin-top: 50px;
+    }
+
+    &__btn, &__btn__submit{
+        width: 140px;
+        height: 50px;
+        background: #FFFFFF;
+        opacity: 0.4;
+        border: 1px solid #B2BBC8;
+        border-radius: 3px;
+        margin-right: 15px;
+    }
+
+    &__btn__submit{
+        color: white;
+        opacity: 1;
+        background: #006AFF!important;
+    }
+
+    &__file{
+        & > span{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 160px;
+            height: 50px;
+            background: #006AFF;
+            border-radius: 3px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            &>img{
+                margin-right: 10px;
+            }
+        }
+        & > p{
+            font-size: 12px;
+            line-height: 19px;
+            color: #006AFF;
+            margin-bottom: 60px;
+        }
+
+        & > input{
+            display: none;
+        }
+    }
+}

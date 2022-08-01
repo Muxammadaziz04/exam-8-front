@@ -1,0 +1,29 @@
+.form{
+    width: 100%;
+    margin-bottom: 50px;
+    &__title{
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+
+    &__radio__wrapper{
+        display: flex;
+        padding-left: 58px;
+        margin-bottom: 11px;
+    }
+    
+    &__radio{
+        display: flex;
+        margin-right: 60px;
+        &>p{
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 17px;
+            color: #333333;
+            margin-right: 10px;
+        }
+    }
+}

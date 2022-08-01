@@ -1,0 +1,78 @@
+.navbar{
+    width: 100%;
+    padding: 15px 0; 
+    background: linear-gradient(265.48deg, #095ACD 33.12%, #006AFF 84.7%);
+
+    &__block{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end; 
+    }
+
+    &__title{
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 43px;
+        color: #FFFFFF;
+        margin-right: auto;
+    }
+
+    &__label{
+        display: flex;
+        position: relative;
+
+        & > button{
+            background: inherit;
+            border: none;
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            transform: translate(0, -50%);
+        }
+    }
+
+    &__input{
+        width: 304px;
+        background: rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        padding: 14px 14px 14px 49px;
+        outline: none;
+        margin-right: 103px;
+    }
+
+    &__link{
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        margin-right: 40px;
+    }
+
+    &__button{
+        width: 160px;
+        height: 51px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #FE8B37;
+        border-radius: 4px;
+        border: none;
+        margin-left: 23px;
+
+        & > img{
+            width: 10px;
+            height: 10px;
+            margin-right: 10px;
+        }
+
+        & > span{
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 21px;
+            color: #FFFFFF;
+        }
+    }
+}

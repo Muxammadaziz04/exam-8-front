@@ -1,0 +1,45 @@
+.footer{
+    width: 100%;
+    padding: 15px 0;
+    background: linear-gradient(265.48deg, #095ACD 33.12%, #006AFF 84.7%);
+
+    &__block{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__title{
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 36px;
+        color: #FFFFFF;
+        margin-right: auto;
+    }
+
+    &__link{
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        margin-right: 70px;
+
+        & > img{
+            width: 16px;
+            height: 16px;
+            margin-right: 12px;
+        }
+    }
+
+    &__social__block{
+        display: flex;
+        align-items: center;
+    }
+
+    &__social__link{
+        margin-left: 20px;
+    }
+}
