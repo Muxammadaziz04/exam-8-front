@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import './admin.scss'
 
 import home from '../../assets/home.svg'
@@ -12,8 +12,7 @@ import { API } from '../../constants';
 import { useNavigate } from 'react-router-dom';
 
 
-const Admin = () => {
-    const [def] = useState('')
+const Admin = (props) => {
     const [list, setList] = useState([])
     const token = localStorage.getItem('token')
     const navigate = useNavigate()
@@ -32,7 +31,7 @@ const Admin = () => {
     }
     }
 
-    const func = async (host) => {
+    const func = useCallback(async (host) => {
         let res = await fetch(host, {
             headers: {
                 token
@@ -44,11 +43,11 @@ const Admin = () => {
             navigate('/login', {replace: true})
         }
         setList(res.data)
-    }
+    }, [navigate, token])
 
     useEffect(() => {
         func(`${API}/pendingPosts`)
-    }, [def])
+    }, [func])
 
     return (
         <div className="admin">
